@@ -5,7 +5,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     mariadb-client \
     libonig-dev \
-    && docker-php-ext-install pdo_mysql mysqli mbstring
+    libzip-dev \
+    vim \
+    git \
+    && docker-php-ext-install pdo_mysql mysqli mbstring zip
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
