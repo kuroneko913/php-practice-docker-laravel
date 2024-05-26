@@ -1,5 +1,4 @@
 さくっとPHPを試したいときに使う。
 
 docker compose up -d
-phpinfoが表示される。
-PDOとmysqliが使える。
+Laraveをインストールしてある。
