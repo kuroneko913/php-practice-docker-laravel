@@ -4,13 +4,13 @@ services:
     build: ./docker
     image: php
     depends_on:
-      - mysql
+      - mysql-server
       - mailpit
     volumes:
       - ./:/application:cached
       - ./docker/php.ini:/usr/local/etc/php/php.ini
 
-  mysql:
+  mysql-server:
     platform: linux/amd64
     image: mysql:8
     command: --default-authentication-plugin=mysql_native_password
