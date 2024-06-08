@@ -1,12 +1,6 @@
 {
     "name": "PracticeLaravel",
-<<<<<<< HEAD
-    "dockerComposeFile":"../dockercompose.yml",
-    "service": "workspace",
-    "workspaceFolder": "/"
-=======
     "dockerComposeFile":"dockercompose.yml",
     "service": "workspace",
     "workspaceFolder": "/application"
->>>>>>> dbe48a1 (devcontainer setting)
 }
