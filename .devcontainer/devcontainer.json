@@ -1,6 +1,6 @@
 {
     "name": "PracticeLaravel",
     "dockerComposeFile":"dockercompose.yml",
-    "service": "workspace",
+    "service": "app",
     "workspaceFolder": "/application"
 }
