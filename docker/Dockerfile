@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     nodejs \
     npm \
-    && docker-php-ext-install pdo_mysql mysqli mbstring zip
+    && pecl install xdebug \
+    && docker-php-ext-install pdo_mysql mysqli mbstring zip \
+    && docker-php-ext-enable xdebug
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
