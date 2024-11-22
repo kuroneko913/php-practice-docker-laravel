@@ -1,5 +1,11 @@
 さくっとPHPを試したいときに使う。
+Laravel, phpmyadmin, xdebug, laravel-debugger をインストールしてある。
 
+使い方
 docker compose build
 docker compose up -d
-Laravel, phpmyadmin, xdebug, laravel-debugger をインストールしてある。
+docker exec -it php-practice-docker-laravel-php-server-1 composer install 
+cp laravel-app/.env.example laravel-app/.env
+docker exec -it php-practice-docker-laravel-php-server-1 php artisan key:generate
+
+この状態で http://localhost にアクセスするとLaravelの初期画面が表示される。

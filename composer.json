@@ -1,8 +1,0 @@
-{
-    "name": "root/application",
-    "autoload": {
-        "psr-4": {
-            "Root\\Application\\": "src/"
-        }
-    }
-}
